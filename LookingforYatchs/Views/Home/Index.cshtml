@@ -1,8 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Hoşgeldiniz";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>Daha fazla <a href="https://www.boatinternational.com/yachts-for-sale">satılık yatlara göz atın </a>.</p>
+</div>
+
+<div class="text-center">
+    <h2>Kayıt Ekranı için </h2>
+    <button onClick="parent.location='http://localhost:12048/Home/Index1'">Kayıt Ol</button> 
 </div>
