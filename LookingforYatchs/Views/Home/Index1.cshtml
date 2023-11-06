@@ -1,4 +1,9 @@
-﻿<form class="text-center" , method="post" , asp-action="Index1">
+﻿@{
+    ViewData["Title"] = "Privacy";
+    Layout = "_Layout2";
+}
+
+<form class="text-center"  method="post"  asp-action="Index1">
     Kayıt ol: 
     <br />
     İsim : <input name="Ad" />

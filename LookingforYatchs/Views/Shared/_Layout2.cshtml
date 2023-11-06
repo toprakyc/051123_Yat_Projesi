@@ -1,0 +1,143 @@
+﻿
+<html lang="en"> 
+  
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+    </script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+    </script> 
+    <script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+    </script> 
+    <style> 
+        .dropdown { 
+            position: static !important; 
+        } 
+          
+        .dropdown-menu { 
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; 
+            margin-top: 0px !important; 
+            width: 100% !important; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+   
+    <div class="fluid-container"> 
+        <center> 
+           
+        
+            <nav class="navbar navbar-expand-lg navbar-dark 
+                        justify-content-between text-white" 
+                 style="background-color: green;"> 
+                <a class="navbar-brand" href="#"> 
+                    <img src= 
+"https://www.geeksforgeeks.org/wp-content/uploads/gfg_transparent_white_small.png"
+                         width="30" height="30" 
+                         class="d-inline-block align-top" alt="">  
+                  GfG BS4 Navbar 
+                </a> 
+                <button class="navbar-toggler " 
+                        type="button" data-toggle="collapse" 
+                        data-target="#navbarNavDropdown01" 
+                        aria-controls="navbarNavDropdown01"
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation" 
+                        style="outline-color:#fff"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+  
+                <div class="collapse navbar-collapse" 
+                     id="navbarNavDropdown01"> 
+  
+                    <ul class="navbar-nav "> 
+                        
+                        <!--dropdown item of menu-->
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" 
+                               href="#" id="navbarDropdown" 
+                               role="button" data-toggle="dropdown"
+                               aria-haspopup="true" 
+                               aria-expanded="false"> 
+                              Dropdown 01 
+                            </a> 
+                            
+                            <!--dropdown sub items of menu-->
+
+                            <div class="dropdown-menu "
+                                 aria-labelledby="navbarDropdown"> 
+                                  <div class="row">
+                                 <div class="col-md-6 bg-black">
+                                <a class="dropdown-item" href="#"> 
+                                  Action 01 
+                                </a> 
+                                <a class="dropdown-item" href="#"> 
+                                  Action 02 
+                                </a> 
+                                <div class="dropdown-divider"></div> 
+                                <a class="dropdown-item" href="#"> 
+                                  More Content here  
+                                </a> 
+                                </div>
+                              
+                                 <div class="col-md-3 bg-black">
+                                    <img width="200px" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/RP3JYYZ4M5MCLBKIGATSQVHIOI.jpg" alt="Italian Trulli">
+
+                                     </div>
+                                      </div>
+
+                            </div> 
+                        </li> 
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" 
+                               href="#" id="navbarDropdown" 
+                               role="button"
+                               data-toggle="dropdown" 
+                               aria-haspopup="true" 
+                               aria-expanded="false"> 
+                              Dropdown 02 
+                            </a> 
+                            
+                            <!--dropdown sub items of menu-->
+                            <div class="dropdown-menu" 
+                                 aria-labelledby="navbarDropdown" 
+                                 style="max-width: 1366px;"> 
+                                <a class="dropdown-item" href="#"> 
+                                  Action 01 
+                                </a> 
+                                <a class="dropdown-item" href="#"> 
+                                  Action 02 
+                                </a> 
+                                <div class="dropdown-divider"></div> 
+                                <a class="dropdown-item" href="#"> 
+                                  More Content here  
+                                </a> 
+                            </div> 
+                        </li> 
+                    </ul> 
+                      
+                    <!--Form item of menu for search purpose-->
+                    <form class="form-inline ml-auto "> 
+  
+                        <input class="form-control mr-sm-4"
+                               type="search" placeholder="Search"
+                               aria-label="Search"> 
+                        <button class="btn btn-success my-4 my-sm-2 "
+                                type="submit">Search</button> 
+                    </form> 
+                </div> 
+            </nav> 
+        </center> 
+    </div> 
+   @RenderBody()
+</body> 
+  
+</html> 
